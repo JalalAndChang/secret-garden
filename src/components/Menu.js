@@ -10,7 +10,7 @@ class Menu extends React.Component {
 					return (
 						<li className="menu-plant" key={`plant-${index}`}>
 							<div>
-								<img src={plant.image} alt="images of plants"/>
+								<img src={plant.image} alt="Succulant"/>
 							</div>
 							<div>
 								<h3>{plant.name}</h3>
