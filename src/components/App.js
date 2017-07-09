@@ -38,12 +38,12 @@ class App extends React.Component {
 
 	render() {
 		return (
-			<div className="secret-garden">
+			<div className="wrapper">
 				<div className="menu">
-					<Header tagline="Online Succulent Shoppe"/>
-					<ul className="list-of-plants">
+					<Header tagline="Succulents"/>
+					<div className="list-of-plants">
 						<Menu addToOrder={this.addToOrder}/>
-					</ul>
+					</div>
 				</div>
 				<Cart />
 			</div>

@@ -1,5 +1,7 @@
 import React from 'react';
 import { render } from 'react-dom';
+import Logo from './Logo.js';
+import SocialIcons from './SocialIcons.js';
 
 class Home extends React.Component {
 	goToStore(e) {
@@ -11,12 +13,17 @@ class Home extends React.Component {
 
 	render() {
 		return (
-			<div>
-				<div className="home">
-					<h1>The Secret Garden Shoppe</h1>
-					<button onClick={this.goToStore.bind(this)} type="submit">Shop</button>
+			<header className="home">
+				<Logo />
+				<div className="cornerTriangleContainer">
+					<div className="cornerTriangle">
+						<button className="cornerTriangle__shopButton" onClick={this.goToStore.bind(this)} type="submit">Shop
+							<i className="fa fa-leaf" aria-hidden="true"></i>
+						</button>
+					</div>
 				</div>
-			</div>
+				<SocialIcons />
+			</header>
 		)
 	}
 }

@@ -48,26 +48,14 @@ const plant = [
     price: 1100,
   },
 {
-    name: 'Hayling',
-    image: '/assets/plant9.png',
-    desc: 'The treelike jade is a popular choice for a low-maintenance potted plant. It can grow up to 6 feet tall and features green, glossy foliage. The most common problem with this plant is that owners tend to overwater it. Let it dry out between waterings, and leave in a sunny spot.',
-    price: 735,
-  },
-{
     name: 'Calcareum Limelight',
     image: '/assets/plant10.png',
     desc: 'These feature disc-shaped, red-edged leaves that appear to be threaded on a thin stem. "Baby necklace" can be planted as a creeping groundcover, but will hang out of a basket nicely, too. Expect small white blooms in late spring-early summer. These can grow to 12 inches in sun-partial shade.',
     price: 1025,
   },
 {
-    name: 'Emerald Spring',
-    image: '/assets/plant11.png',
-    desc: 'This variety of the two-row stonecrop grows to a 6-inch-high groundcover. In the summer, expect pink blooms against red-green stems and foliage.',
-    price: 690,
-  },
-{
     name: 'Pumilum',
-    image: '../../.public/.assets/.plant12.png',
+    image: '/assets/plant12.png',
     desc: 'These plants grow 3 to 4 inches in height, creating a carpet of green 2- to 5-inch-wide rosettes. They require full sun but are frost tolerant and will return and multiply year after year. Some varieties feature white to pink blooms in the summer.',
     price: 795,
   },
