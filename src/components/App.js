@@ -3,6 +3,7 @@ import Header from './Header';
 import Cart from './Cart';
 import plant from './plant';
 import Menu from './Menu';
+import SocialIcons from './SocialIcons.js';
 
 class App extends React.Component {
 	constructor() {
@@ -46,7 +47,10 @@ class App extends React.Component {
 					</div>
 				</div>
 				<Cart />
-				<footer>Copyright © Tina Chang and Nahrin Jalal</footer>
+				<footer>
+					Copyright 2017 © Tina Chang & Nahrin Jalal
+					<SocialIcons />
+				</footer>
 			</div>
 		)
 	}

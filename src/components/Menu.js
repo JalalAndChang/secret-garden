@@ -1,5 +1,6 @@
 import React from 'react';
 import plant from './plant';
+import { formatPrice } from './helpers.js';
 
 class Menu extends React.Component {
 	render() {
@@ -16,7 +17,7 @@ class Menu extends React.Component {
 								<p>{plant.desc}</p>
 							</div>
 							<div className="priceAndCart">
-								<h5>${plant.price}</h5>
+								<h5>{formatPrice(plant.price)}</h5>
 								<button onClick={() => this.props.addToOrder(index)}><i className="fa fa-shopping-cart" aria-hidden="true"></i>Add To Cart</button>
 							</div>
 						</li>

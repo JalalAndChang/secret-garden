@@ -109,8 +109,7 @@ button:hover, .socialIcons .fa:hover {
 
 .socialIcons {
 	position: absolute;
-	bottom: 30px;
-	left: 70px;
+	bottom: 15px;
 	z-index: 9;
 }
 
@@ -138,7 +137,6 @@ button:hover, .socialIcons .fa:hover {
 
 
 /*MENU PAGE STYLE STARTS MENU PAGE STYLE STARTS */
-
 .wrapper {
 	max-width: 1440px;
 	margin: 0 auto;
@@ -159,10 +157,10 @@ nav a {
 	text-decoration: none;
 	transition: all 0.2s;
 }
+
 nav a:hover {
 	color: #ffbf1f;
 }
-
 
 .menuHeader .logo {
 	padding: 25px 0 40px 0;
@@ -173,18 +171,19 @@ nav a:hover {
 
 .menuHeader .socialIcons {
 	position: fixed;
-	bottom: 50px;
-	left: 15px;
+	bottom: 30px;
+	left: 10px;
 	display: flex;
 	flex-direction: column;
 }
 
 .menuHeader .socialIcons .fa {
-	margin: 10px;
+	margin: 8px;
+	background: none;
 }
 
-.menuHeader .socialIcons .fa:hover {
-	color: white;
+.menuHeader .socialIcons .fa:hover, .priceAndCart button:hover {
+	color: #ffbf1f;
 }
 
 .menuHeader .socialIcons .fa-facebook {
@@ -212,6 +211,7 @@ h2.tagline .fa-flip-horizontal {
 	justify-content: center;
 	flex-wrap: wrap;
 }
+
 .menu-plant {
 	background: #fff;
 	width: 370px;
@@ -237,8 +237,9 @@ h2.tagline .fa-flip-horizontal {
 }
 
 .priceAndCart button {
-	padding: 6px 11px;
-	border-radius: 5px;
+	padding: 6px 0;
+	border-radius: 2px;
+	background: none;
 }
 
 .plantName {
@@ -251,11 +252,24 @@ h2.tagline .fa-flip-horizontal {
 	font-family: sans-serif;
 	font-weight: lighter;
 	margin: 15px 0 40px 0;
+	text-align: justify;
 }
 
 h5 {
-	font-size: 1.2rem;
+	font-size: 1.1rem;
 }
+
+footer {
+	text-align: center;
+	font-size: 1rem;
+	padding: 80px 0 30px 0;
+}
+
+footer .socialIcons {
+	display: none;
+}
+
+
 
 @media (min-width: 1640px) {
 	nav {
@@ -264,18 +278,43 @@ h5 {
 }
 
 @media (max-width: 1140px) {
+	.logo {
+		margin-top: 70px;
+	}
 	nav {
+		top: 0;
 		right: 0;
+		left: 0;
+		text-align: right;
+		background: white;
+		padding: 20px;
 	}
 }
 
 @media (max-width: 650px) {
+	nav {
+		font-size: 1rem;
+	}
+	nav a {
+		margin: 0;
+	}
+	.logo {
+		font-size: 4.7rem;
+		line-height: 2.2rem;
+	}
+	.garden {
+		margin-top: 37px;
+	}
+	.logo span {
+		font-size: 1.6rem;
+	}
 	h2.tagline {
-		margin-top: 70px;
-		margin-bottom: 0;
+		margin-top: 100px;
+		margin-bottom: -10px;
+		font-size: 1.7rem;
 	}
 	.menuHeader .socialIcons {
-		flex-direction: row;
+		display: none;
 	}
 	.menu-plant {
 		padding: 20px;
@@ -303,26 +342,30 @@ h5 {
 	.priceAndCart button {
 		bottom: 25px;
 	}
+	footer {
+		position: relative;
+	}
+	footer .socialIcons {
+		display: block;
+		top: 28px;
+		left: 0;
+		right: 0;
+	}
+	footer .socialIcons .fa {
+		background: none;
+		margin: 5px;
+		font-size: 1.3rem;
+	}
+	footer .socialIcons .fa:hover {
+		color: #ffbf1f;
+	}
 }
+
 @media (max-width: 420px) {
 	.menu-plant__img {
 		padding: 0;
 		width: 40%;
 	}
 }
-
-
-
 /*MENU PAGE STYLE ENDS MENU PAGE STYLE ENDS */
 
-
-
-
-
-
-
-footer {
-	text-align: center;
-	font-size: 1rem;
-	padding: 80px 0 30px 0;
-}
