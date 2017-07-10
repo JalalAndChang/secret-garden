@@ -3,6 +3,7 @@ import Header from './Header';
 import Cart from './Cart';
 import plant from './plant';
 import Menu from './Menu';
+import SocialIcons from './SocialIcons.js';
 
 class App extends React.Component {
 	constructor() {
@@ -38,14 +39,18 @@ class App extends React.Component {
 
 	render() {
 		return (
-			<div className="secret-garden">
+			<div className="wrapper">
 				<div className="menu">
-					<Header tagline="Online Succulent Shoppe"/>
-					<ul className="list-of-plants">
+					<Header tagline="Succulents"/>
+					<div className="list-of-plants">
 						<Menu addToOrder={this.addToOrder}/>
-					</ul>
+					</div>
 				</div>
 				<Cart />
+				<footer>
+					Copyright 2017 © Tina Chang & Nahrin Jalal
+					<SocialIcons />
+				</footer>
 			</div>
 		)
 	}
