@@ -11,11 +11,11 @@ class Menu extends React.Component {
 							<div className="menu-plant__img">
 								<img src={plant.image} alt="Succulant"/>
 							</div>
-							<div>
-								<h3>{plant.name}</h3>
+							<div className="plantInfo">
+								<h3 className="plantName">{plant.name}</h3>
 								<p>{plant.desc}</p>
 							</div>
-							<div>
+							<div className="priceAndCart">
 								<h5>${plant.price}</h5>
 								<button onClick={() => this.props.addToOrder(index)}><i className="fa fa-shopping-cart" aria-hidden="true"></i>Add To Cart</button>
 							</div>

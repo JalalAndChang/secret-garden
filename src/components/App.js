@@ -46,6 +46,7 @@ class App extends React.Component {
 					</div>
 				</div>
 				<Cart />
+				<footer>Copyright © Tina Chang and Nahrin Jalal</footer>
 			</div>
 		)
 	}

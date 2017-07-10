@@ -111,6 +111,7 @@ button:hover, .socialIcons .fa:hover {
 	position: absolute;
 	bottom: 30px;
 	left: 70px;
+	z-index: 9;
 }
 
 .socialIcons .fa {
@@ -172,7 +173,7 @@ nav a:hover {
 
 .menuHeader .socialIcons {
 	position: fixed;
-	bottom: 30px;
+	bottom: 50px;
 	left: 15px;
 	display: flex;
 	flex-direction: column;
@@ -213,26 +214,115 @@ h2.tagline .fa-flip-horizontal {
 }
 .menu-plant {
 	background: #fff;
-	max-width: 25%;
-	margin: 30px;
+	width: 370px;
+	margin: 25px;
 	list-style: none;
 	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 2px 12px rgba(0,0,0,0.23);
-	padding: 30px;
+	padding: 15px 40px 40px 40px;
 	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 .menu-plant__img {
 	padding: 40px;
 }
 
-.menu-plant button {
-	position: absolute;
-	bottom: 10px;
-	right: 10px;
+.priceAndCart {
 	font-size: 1rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.priceAndCart button {
 	padding: 6px 11px;
+	border-radius: 5px;
+}
+
+.plantName {
+	font-size: 1.5rem;
+	text-align: center;
+}
+
+.plantInfo p {
+	font-size: 0.9rem;
+	font-family: sans-serif;
+	font-weight: lighter;
+	margin: 15px 0 40px 0;
+}
+
+h5 {
+	font-size: 1.2rem;
+}
+
+@media (min-width: 1640px) {
+	nav {
+		right: 250px;
+	}
+}
+
+@media (max-width: 1140px) {
+	nav {
+		right: 0;
+	}
+}
+
+@media (max-width: 650px) {
+	h2.tagline {
+		margin-top: 70px;
+		margin-bottom: 0;
+	}
+	.menuHeader .socialIcons {
+		flex-direction: row;
+	}
+	.menu-plant {
+		padding: 20px;
+		flex-direction: row;
+	}
+	.plantInfo p {
+		display: none;
+	}
+	.menu-plant__img {
+		padding: 0;
+		width: 50%;
+	}
+	.plantName, .priceAndCart h5, .priceAndCart button {
+		position: absolute;
+		right: 20px;
+	}
+	.plantName {
+		top: 25px;
+		font-size: 1.4rem;
+	}
+	.priceAndCart h5 {
+		top: 60px;
+		font-size: 1rem;
+	}
+	.priceAndCart button {
+		bottom: 25px;
+	}
+}
+@media (max-width: 420px) {
+	.menu-plant__img {
+		padding: 0;
+		width: 40%;
+	}
 }
 
 
 
 /*MENU PAGE STYLE ENDS MENU PAGE STYLE ENDS */
+
+
+
+
+
+
+
+footer {
+	text-align: center;
+	font-size: 1rem;
+	padding: 80px 0 30px 0;
+}
