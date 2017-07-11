@@ -46,7 +46,6 @@ class App extends React.Component {
 						<Menu addToOrder={this.addToOrder}/>
 					</div>
 				</div>
-				<Cart />
 				<footer>
 					Copyright 2017 © Tina Chang & Nahrin Jalal
 					<SocialIcons />
