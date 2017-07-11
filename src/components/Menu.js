@@ -8,26 +8,26 @@ class Menu extends React.Component {
 	render() {
 		return (
 			<div>
-			<ul className="menu-plant__container">
-				{plant.map( (plant, index) => {
-					return (
-						<li className="menu-plant" key={`plant-${index}`}>
-							<div className="menu-plant__img">
-								<img src={plant.image} alt="Succulant"/>
-							</div>
-							<div className="plantInfo">
-								<h3 className="plantName">{plant.name}</h3>
-								<p>{plant.desc}</p>
-							</div>
-							<div className="priceAndCart">
-								<h5>{formatPrice(plant.price)}</h5>
-								<button onClick={() => this.props.addToOrder(index)}><i className="fa fa-shopping-cart" aria-hidden="true"></i>Add To Cart</button>
-							</div>
-						</li>
-					)
-				})}
-			</ul>
-			<Cart plant={this.state.plant} order={this.state.order}/> 
+				<ul className="menu-plant__container">
+					{plant.map( (plant, index) => {
+						return (
+							<li className="menu-plant" key={`plant-${index}`}>
+								<div className="menu-plant__img">
+									<img src={plant.image} alt="Succulant"/>
+								</div>
+								<div className="plantInfo">
+									<h3 className="plantName">{plant.name}</h3>
+									<p>{plant.desc}</p>
+								</div>
+								<div className="priceAndCart">
+									<h5>{formatPrice(plant.price)}</h5>
+									<button onClick={() => this.props.addToOrder(index)}><i className="fa fa-shopping-cart" aria-hidden="true"></i>Add To Cart</button>
+								</div>
+							</li>
+						)
+					})}
+				</ul>
+				<Cart plants={this.state.plants} order={this.state.order}/> 
 			</div>
 		)
 	}
