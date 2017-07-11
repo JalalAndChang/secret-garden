@@ -1,7 +1,6 @@
 import React from 'react';
 import plant from './plant';
 import Cart from './Cart';
-import Header from './Header';
 import { formatPrice } from './helpers.js';
 
 class Menu extends React.Component {
@@ -27,7 +26,7 @@ class Menu extends React.Component {
 						)
 					})}
 				</ul>
-				<Cart plants={this.state.plants} order={this.state.order}/> 
+				
 			</div>
 		)
 	}
