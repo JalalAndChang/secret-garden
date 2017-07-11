@@ -8,16 +8,12 @@ class Cart extends React.Component {
 		this.renderOrder = this.renderOrder.bind(this);
 	}
 	renderOrder(key) {
-		const plant = this.props.plant[key];
+		const plants = this.props.plants[key];
 		const count = this.props.order[key];
-
-		if(!plant || plant.status === 'unavailable') {
-			return <li key={key}>Sorry, {plant ? plant.name : 'plant'} is no longer available!</li>
-		}
 		return(
 			<li key={key}>
-				<span>{count}lbs {plant.name}</span>
-				<span className="price">{formatPrice(count + plant.price)}</span>
+				<span>{count}pot {plant.name}</span>
+				<span className="price">{formatPrice(count * plant.price)}</span>
 			</li>
 		)
 	}
@@ -25,15 +21,14 @@ class Cart extends React.Component {
 	render() {
 		const orderIds = Object.keys(this.props.order);
 		const total = orderIds.reduce((prevTotal, key) => {
-			const plant = this.props.plant[key];
+			const plants = this.props.plants[key];
 			const count = this.props.order[key];
-			const isAvailable = plant && plant.status === 'available';
+			const isAvailable = true;
 			
 			if(isAvailable) {
-			return prevTotal + (count + plant.price || 0);
+				return prevTotal + (count * plant.price || 0);
 		}
-		return prevTotal;
-	}, 0);
+	});
 		return(
 			<aside className="sideBar" ref={ref => this.sideBar = ref}>
 				<div className="order-wrap">
