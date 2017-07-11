@@ -27,8 +27,8 @@ class Cart extends React.Component {
 			
 			if(isAvailable) {
 				return prevTotal + (count * plant.price || 0);
-		}
-	});
+			}
+		});
 		return(
 			<aside className="sideBar" ref={ref => this.sideBar = ref}>
 				<div className="order-wrap">
