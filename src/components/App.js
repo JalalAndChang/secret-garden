@@ -1,8 +1,7 @@
 import React from 'react';
 import Header from './Header';
-import Cart from './Cart';
-import plant from './plant';
 import Menu from './Menu';
+import Cart from './Cart';
 import SocialIcons from './SocialIcons.js';
 
 class App extends React.Component {
@@ -40,6 +39,7 @@ class App extends React.Component {
 	render() {
 		return (
 			<div className="wrapper">
+				<Cart plants={this.state.plants} order={this.state.order}/> 
 				<div className="menu">
 					<Header tagline="Succulents"/>
 					<div className="list-of-plants">

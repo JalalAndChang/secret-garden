@@ -1,8 +1,5 @@
 import React from 'react';
 import Logo from './Logo.js';
-import Menu from './Menu';
-import Cart from './Cart';
-import plant from './plant';
 import SocialIcons from './SocialIcons.js';
 
 
